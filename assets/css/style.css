@@ -30,6 +30,13 @@ h1,h2 {
     font-size: 110%;
 }
 
+
+#menu, #logo {
+    /* The text will vertically center itself in the lineheight. You make the lineheight accommodate
+    the logo and the links.
+    */
+    line-height: 75px; 
+}
 /* Make the ul float right and the li float left to make them display in the right order
     without reordering the HTML.
 */
@@ -42,4 +49,16 @@ h1,h2 {
     float: left;
     list-style-type: none;
     margin-right: 30px;
+}
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
