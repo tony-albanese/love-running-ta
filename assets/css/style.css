@@ -24,3 +24,22 @@ h1,h2 {
     float: left;
     font-size: 200%;
 }
+
+#menu {
+    letter-spacing: 4px;
+    font-size: 110%;
+}
+
+/* Make the ul float right and the li float left to make them display in the right order
+    without reordering the HTML.
+*/
+#menu ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
