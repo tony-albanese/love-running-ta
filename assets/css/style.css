@@ -69,4 +69,33 @@ h1,h2 {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+/* 
+    Style the animation of hero image to make it zoom. Set the size of the section that contains the div
+
+*/
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden; /* This is what clears the are to the top of the image.*/
+}
+
+/* 
+Creates the level of zoom for the hero image
+*/
+
+@keyframes hero-zoom {
+    from {
+transform: scale(1);
+    }
+
+    to {
+transform: scale(1.1);
+    }
 }
